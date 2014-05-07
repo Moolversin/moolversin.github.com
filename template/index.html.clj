@@ -15,13 +15,18 @@
    [:li [:a {:href "#"} "Link 1"]]
    [:li [:a {:href "#"} "Link 1"]]]]]
 
+(defn image []
+  [:a.item-link
+   [:div.item
+    [:img {:src "http://placehold.it/620x240/111111/eeeeee&text=Image"}]
+    [:div.hide.overflow "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]]])
+
 [:div#container
- [:a.item-link
-  [:div.item
-   [:img {:src "http://placehold.it/620x240/111111/eeeeee&text=Image"}]
-   [:div.hide.overflow "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]]]
-  [:a.item-link [:div.item [:img {:src "http://placehold.it/620x240/111111/eeeeee&text=Image"}]]]
-  [:a.item-link [:div.item [:img {:src "http://placehold.it/620x240/111111/eeeeee&text=Image"}]]]
-  [:a.item-link [:div.item [:img {:src "http://placehold.it/620x240/111111/eeeeee&text=Image"}]]]
-  [:a.item-link [:div.item [:img {:src "http://placehold.it/620x240/111111/eeeeee&text=Image"}]]]
- ]
+ (image)
+ (image)
+ (image)
+ (image)
+ (image)
+ (image)
+ (image)
+ (image)]

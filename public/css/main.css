@@ -18,7 +18,7 @@
 .item-link:hover .hide {
   z-index: 1;
   display: block;
-  top: 0px;
+  bottom: 0px;
   position: absolute;
 }
 
