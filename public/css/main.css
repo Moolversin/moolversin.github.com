@@ -1,0 +1,45 @@
+.item {
+  width: 30%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.item-link:hover img {
+  z-index: 1;
+  transform: rotate(0deg) scale(1.05);
+}
+
+.item-link:hover .hide {
+  z-index: 1;
+  display: block;
+  top: 0px;
+  position: absolute;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body {
+  background: black;
+}
+
+.logo {
+  margin: 15px 0 15px 0;
+}
+
+.overflow {
+  background: #ffffff;
+  opacity:0.3;
+  filter:alpha(opacity=30);
+  color: #000000;
+}
+
+// vim: ts=2
