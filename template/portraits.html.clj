@@ -19,9 +19,10 @@
    http://moolver-sin.deviantart.com/art/Dez-Fafara-204484050
    http://moolver-sin.deviantart.com/art/Maxim-196557811")
 
-(logo)
-(main-nav)
-(galleries-nav "portraits")
+[:div.header
+ (logo)
+ (main-nav)
+ (galleries-nav "portraits")]
 
 [:div#container
  (pmap image (urls-for images))]

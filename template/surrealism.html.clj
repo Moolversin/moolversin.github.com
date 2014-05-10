@@ -18,9 +18,10 @@
    http://moolver-sin.deviantart.com/art/Thought-generator-196667639
    http://moolver-sin.deviantart.com/art/Cat-collector-196667024")
 
-(logo)
-(main-nav)
-(galleries-nav "surrealism")
+[:div.header
+ (logo)
+ (main-nav)
+ (galleries-nav "surrealism")]
 
 [:div#container
  (pmap image (urls-for images))]

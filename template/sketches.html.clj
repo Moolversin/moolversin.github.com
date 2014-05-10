@@ -13,9 +13,10 @@
    http://moolver-sin.deviantart.com/art/Face-196556715
    http://moolver-sin.deviantart.com/art/Wolverine-196555370")
 
-(logo)
-(main-nav)
-(galleries-nav "sketches")
+[:div.header
+ (logo)
+ (main-nav)
+ (galleries-nav "sketches")]
 
 [:div#container
  (pmap image (urls-for images))]

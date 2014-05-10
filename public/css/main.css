@@ -1,3 +1,7 @@
+.header {
+  margin-bottom: 40px !important;
+}
+
 .item {
   margin: 5px;
   position: relative;
@@ -79,7 +83,6 @@ body {
 }
 
 .galleries-links {
-  margin-bottom: 40px;
   left: 0.175rem;
   position: relative;
 }
