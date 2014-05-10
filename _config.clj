@@ -21,9 +21,7 @@
 
  ;; default site data
  :site {:charset "utf-8"
-        :css     ["http://fonts.googleapis.com/css?family=Josefin+Sans"
-                  "/css/common.css"
-                  "/css/main.css"]}
+        :css     []}
 
  ;; highlight setting
  :code-highlight {:CLJ "lang-clj", :CLOJURE "lang-clj"}
