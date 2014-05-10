@@ -41,6 +41,29 @@
    http://moolver-sin.deviantart.com/art/Glance-406528379
    http://moolver-sin.deviantart.com/art/Blue-Girl-356754285")
 
+(def opts
+  [{:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w1"}
+   {:class "w2"}])
+
 (def urls (-> images
               (clojure.string/split #"\n")
               (->> (map clojure.string/trim))))
@@ -53,7 +76,7 @@
 
 (def image-data-memoized (memoize image-data))
 
-(defn image [url]
+(defn image [[url opts]]
   (let [data (image-data-memoized url)
         url (data "url")
         title (data "title")
@@ -64,13 +87,12 @@
                                  title
                                  [:br]
                                  [:a {:href url} "View on DeviantArt"])}
-     [:div.item
+     [:div {:class (str "item "(:class opts))}
       [:img {:src url}]
       [:div.hide.overflow
        [:h2 title]
        [:br]
        [:p.description category]]]]))
 
-
 [:div#container
- (map image urls)]
+ (map image (zipmap urls opts))]

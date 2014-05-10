@@ -1,8 +1,11 @@
 .item {
-  width: 30%;
   margin-bottom: 10px;
   position: relative;
 }
+
+.w1 { width: 31%; }
+.w2 { width: 62.5%; }
+.w3 { width: 90%; }
 
 .item img {
   width: 100%;
