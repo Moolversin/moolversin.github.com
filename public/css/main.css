@@ -35,6 +35,7 @@
 .item-link:hover img {
   z-index: 1;
   transform: rotate(0deg) scale(1.05);
+  -webkit-transform: rotate(0deg) scale(1.05);
 }
 
 .item-link:hover .hide {
