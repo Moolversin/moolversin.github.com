@@ -24,8 +24,7 @@
    http://moolver-sin.deviantart.com/art/Maxim-196557811
    http://moolver-sin.deviantart.com/art/Embryo-257361890
    http://moolver-sin.deviantart.com/art/Hunter-404507800
-   http://moolver-sin.deviantart.com/art/Glance-406528379
-   http://moolver-sin.deviantart.com/art/Blue-Girl-356754285")
+   http://moolver-sin.deviantart.com/art/Glance-406528379")
 
 (def opts
   [{:class "w1"}
@@ -47,8 +46,7 @@
    {:class "w1"}
    {:class "w1"}
    {:class "w1"}
-   {:class "w1"}
-   {:class "w2"}])
+   {:class "w1"}])
 
 (def urls (-> images
               (clojure.string/split #"\n")
