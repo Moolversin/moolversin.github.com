@@ -23,7 +23,7 @@
      [:li [:a {:href "http://moolver-sin.deviantart.com/gallery/"} "Gallery"]]
      [:li [:a {:href "http://moolver-sin.deviantart.com/prints/"} "Prints"]]
      [:li [:a {:href "/about.html"} "About"]]
-     [:li [:a {:href "/contacts.html"} "Contacts"]]]]]
+     [:li [:a {:href "/contact.html"} "Contact"]]]]]
 
   contents]
  (js ["/js/masonry.pkgd.min.js"
