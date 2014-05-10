@@ -75,11 +75,27 @@ body {
 }
 
 .header-links {
+  margin-bottom: 10px;
+}
+
+.galleries-links {
   margin-bottom: 40px;
 }
 
-.header-links .inline-list {
+.inline-list {
   display: inline;
+}
+
+.active {
+  background: #ffffff;
+  color: #000000;
+  opacity:0.8;
+  filter:alpha(opacity=80);
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 5px;
 }
 
 // vim: ts=2:bs=2:sts=2:expandtab

@@ -23,5 +23,8 @@
    http://moolver-sin.deviantart.com/art/Hunter-404507800
    http://moolver-sin.deviantart.com/art/Glance-406528379")
 
+(logo)
+(main-nav)
+
 [:div#container
  (pmap image (urls-for images))]
