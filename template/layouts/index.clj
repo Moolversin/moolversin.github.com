@@ -20,8 +20,12 @@
    [:div.small-5.column.small-centered.text-center
     [:ul.inline-list
      [:li [:a {:href "/"} "Home"]]
-     [:li [:a {:href "http://moolver-sin.deviantart.com/gallery/"} "Gallery"]]
-     [:li [:a {:href "http://moolver-sin.deviantart.com/prints/"} "Prints"]]
+     [:li [:a {:href "http://moolver-sin.deviantart.com/gallery/"
+               :target "_blank"}
+           "Gallery"]]
+     [:li [:a {:href "http://moolver-sin.deviantart.com/prints/"
+               :target "_blank"}
+           "Prints"]]
      [:li [:a {:href "/about.html"} "About"]]
      [:li [:a {:href "/contact.html"} "Contact"]]]]]
 
