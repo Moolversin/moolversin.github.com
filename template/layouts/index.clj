@@ -1,8 +1,7 @@
 [:head
  [:meta {:charset (:charset site)}]
  [:title (:title site)]
- (js ["/js/masonry.pkgd.min.js"
-      "/js/jquery-1.11.0.min.js"
+ (js ["/js/jquery-1.11.0.min.js"
       "/js/lightbox.min.js"])
  (css ["/css/normalize.css"
        "/css/foundation.min.css"
@@ -12,5 +11,6 @@
 
 [:body
  [:div contents]
- (js ["/js/main.js"])]
+ (js ["/js/masonry.pkgd.min.js"
+      "/js/main.js"])]
 ; /body
