@@ -30,11 +30,10 @@
          '[hiccup.core :refer [html]])
 
 (defn image-data [url]
-  ;(->> url
-       ;(str "http://backend.deviantart.com/oembed?url=")
-       ;slurp
-       ;cheshire.core/parse-string)
-  {"title" "title" "url" "http://placehold.it/560x960&text=Logo"})
+  (->> url
+       (str "http://backend.deviantart.com/oembed?url=")
+       slurp
+       cheshire.core/parse-string))
 
 (def image-data-memoized (memoize image-data))
 
