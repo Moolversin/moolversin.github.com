@@ -1,9 +1,6 @@
 ; @layout  index
 ; @title   Lubov Soltan - Home
 
-(require '[cheshire.core])
-(require '[hiccup.core])
-
 (def images
   "http://moolver-sin.deviantart.com/art/Dez-Fafara-204484050
    http://moolver-sin.deviantart.com/art/Christian-Bale-209830247
@@ -26,54 +23,5 @@
    http://moolver-sin.deviantart.com/art/Hunter-404507800
    http://moolver-sin.deviantart.com/art/Glance-406528379")
 
-(def opts
-  [{:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}
-   {:class "w1"}])
-
-(def urls (-> images
-              (clojure.string/split #"\n")
-              (->> (map clojure.string/trim))))
-
-(defn image-data [url]
-  (->> url
-       (str "http://backend.deviantart.com/oembed?url=")
-       slurp
-       cheshire.core/parse-string))
-
-(def image-data-memoized (memoize image-data))
-
-(defn image [[main-url opts]]
-  (let [data (image-data-memoized main-url)
-        url (data "url")
-        title (data "title")]
-    [:a.item-link {:href url
-                   :data-lightbox "images"
-                   :data-title (hiccup.core/html
-                                 title
-                                 [:br]
-                                 [:a {:href main-url} "View on DeviantArt"])}
-     [:div {:class (str "item "(:class opts))}
-      [:img {:src url}]
-      [:div.hide.overflow
-       [:h2 title]]]]))
-
 [:div#container
- (pmap image (zipmap urls opts))]
+ (pmap image (urls-for images))]

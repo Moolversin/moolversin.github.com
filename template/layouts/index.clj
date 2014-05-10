@@ -1,3 +1,35 @@
+
+(require '[cheshire.core])
+(require '[hiccup.core])
+
+(defn urls-for [images]
+  (-> images
+      (clojure.string/split #"\n")
+      (->> (map clojure.string/trim))))
+
+(defn image-data [url]
+  (->> url
+       (str "http://backend.deviantart.com/oembed?url=")
+       slurp
+       cheshire.core/parse-string))
+
+(def image-data-memoized (memoize image-data))
+
+(defn image [main-url]
+  (let [data (image-data-memoized main-url)
+        url (data "url")
+        title (data "title")]
+    [:a.item-link {:href url
+                   :data-lightbox "images"
+                   :data-title (hiccup.core/html
+                                 title
+                                 [:br]
+                                 [:a {:href main-url} "View on DeviantArt"])}
+     [:div.item.w1
+      [:img {:src url}]
+      [:div.hide.overflow
+       [:h2 title]]]]))
+
 [:head
  [:meta {:name "description"
          :content "Lubov Soltan. Love Soltan. MoolverSin. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com"}]
