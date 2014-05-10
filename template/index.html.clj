@@ -1,20 +1,6 @@
 ; @layout  index
 ; @title   Love Soltan
 
-[:div.row
- [:div.small-3.small-centered.column
-  [:img.logo {:src "http://placehold.it/160x60&text=Logo"}]]]
-
-[:div.row.header-links
- [:div.small-5.column.small-centered.text-center
-  [:ul.inline-list
-   [:li [:a {:href "#"} "Link 1"]]
-   [:li [:a {:href "#"} "Link 1"]]
-   [:li [:a {:href "#"} "Link 1"]]
-   [:li [:a {:href "#"} "Link 1"]]
-   [:li [:a {:href "#"} "Link 1"]]
-   [:li [:a {:href "#"} "Link 1"]]]]]
-
 (require '[cheshire.core])
 (require '[hiccup.core])
 
