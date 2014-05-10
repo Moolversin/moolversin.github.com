@@ -77,4 +77,8 @@ body {
   margin-bottom: 20px;
 }
 
-// vim: ts=2
+.header-links .inline-list {
+  display: inline;
+}
+
+// vim: ts=2:bs=2:sts=2:expandtab

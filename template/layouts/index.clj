@@ -2,6 +2,7 @@
  [:meta {:name "description"
          :content "Lubov Soltan. Love Soltan. MoolverSin. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com"}]
  [:meta {:charset (:charset site)}]
+ [:link {:href "/favicon.ico" :rel "shortcut icon"}]
  [:title (:title site)]
  (js ["/js/jquery-1.11.0.min.js"
       "/js/lightbox.min.js"])
