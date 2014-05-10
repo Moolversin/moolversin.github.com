@@ -80,6 +80,16 @@ body {
 
 .galleries-links {
   margin-bottom: 40px;
+  left: 0.175rem;
+  position: relative;
+}
+
+.galleries-links li {
+  margin-left: 1.2rem;
+}
+
+.galleries-links li a {
+  font-size: 14px !important;
 }
 
 .inline-list {

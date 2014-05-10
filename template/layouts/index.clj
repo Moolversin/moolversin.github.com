@@ -54,7 +54,7 @@
 
 (defn galleries-nav [current]
   [:div.row.galleries-links
-   [:div.small-6.column.small-centered.text-center
+   [:div.small-5.column.small-centered.text-center
     [:ul.inline-list
      [:li [:a {:href "/portraits.html"
                :class (is-active? "portraits" current)}
