@@ -1,5 +1,5 @@
 ; @layout  index
-; @title   Love Soltan
+; @title   Lubov Soltan - Home
 
 (require '[cheshire.core])
 (require '[hiccup.core])

@@ -1,4 +1,6 @@
 [:head
+ [:meta {:name "description"
+         :content "Lubov Soltan. Love Soltan. MoolverSin. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com"}]
  [:meta {:charset (:charset site)}]
  [:title (:title site)]
  (js ["/js/jquery-1.11.0.min.js"
@@ -14,7 +16,7 @@
 
   [:div.row
    [:div.small-3.small-centered.column
-    [:img.logo {:src "http://placehold.it/160x60&text=Logo"}]]]
+    [:img.logo {:src "/img/logo.png"}]]]
 
   [:div.row.header-links
    [:div.small-5.column.small-centered.text-center
