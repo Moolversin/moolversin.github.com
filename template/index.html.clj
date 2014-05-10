@@ -26,5 +26,35 @@
            "http://moolver-sin.deviantart.com/art/Octogirl-408642637"
            "http://moolver-sin.deviantart.com/art/Hunter-404507800"])
 
+(require '[cheshire.core :as json]
+         '[hiccup.core :refer [html]])
+
+(defn image-data [url]
+  ;(->> url
+       ;(str "http://backend.deviantart.com/oembed?url=")
+       ;slurp
+       ;cheshire.core/parse-string)
+  {"title" "title" "url" "http://placehold.it/560x960&text=Logo"})
+
+(def image-data-memoized (memoize image-data))
+
+(defn image [url]
+  (let [data (image-data-memoized url)
+        url (data "url")
+        title (data "title")
+        category (data "category")]
+    [:a.item-link {:href url
+                   :data-lightbox "images"
+                   :data-title (html title
+                                     [:br]
+                                     [:a {:href url} "View on DeviantArt"])}
+     [:div.item
+      [:img {:src url}]
+      [:div.hide.overflow
+       [:h2 title]
+       [:br]
+       [:p.description category]]]]))
+
+
 [:div#container
- (map image urls)]
+ (pmap image urls)]

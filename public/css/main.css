@@ -10,6 +10,17 @@
   transition: all 0.2s ease-in-out 0s;
 }
 
+.item h2 {
+  color: #000000;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.item .description {
+  font-size: 12px;
+  line-height: 1;
+}
+
 .item-link:hover img {
   z-index: 1;
   transform: rotate(0deg) scale(1.05);
@@ -41,6 +52,7 @@ body {
   filter:alpha(opacity=80);
   color: #000000;
   padding: 10px;
+  width: 100%;
 }
 
 #container {
