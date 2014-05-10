@@ -15,18 +15,16 @@
    [:li [:a {:href "#"} "Link 1"]]
    [:li [:a {:href "#"} "Link 1"]]]]]
 
-(defn image []
-  [:a.item-link
-   [:div.item
-    [:img {:src "http://placehold.it/620x240/111111/eeeeee&text=Image"}]
-    [:div.hide.overflow "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]]])
+(def urls ["http://moolver-sin.deviantart.com/art/Dez-Fafara-204484050"
+           "http://moolver-sin.deviantart.com/art/Christian-Bale-209830247"
+           "http://moolver-sin.deviantart.com/art/Khal-Drogo-259801587"
+           "http://moolver-sin.deviantart.com/art/Peter-Steele-Type-O-Negative-243453400"
+           "http://moolver-sin.deviantart.com/art/Peter-Tagtgren-213246176"
+           "http://moolver-sin.deviantart.com/art/Max-207549641"
+           "http://moolver-sin.deviantart.com/art/Mortarion-Prince-of-Decay-196757635"
+           "http://moolver-sin.deviantart.com/art/Look-in-her-eyes-253242373"
+           "http://moolver-sin.deviantart.com/art/Octogirl-408642637"
+           "http://moolver-sin.deviantart.com/art/Hunter-404507800"])
 
 [:div#container
- (image)
- (image)
- (image)
- (image)
- (image)
- (image)
- (image)
- (image)]
+ (map image urls)]

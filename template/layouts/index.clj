@@ -1,3 +1,21 @@
+(require '[cheshire.core :as json])
+
+(defn image-data [url]
+  (->> url
+       (str "http://backend.deviantart.com/oembed?url=")
+       slurp
+       json/parse-string))
+
+(defn image [url]
+  (let [data (image-data url)]
+    [:a.item-link {:href (data "url")}
+     [:div.item
+      [:img {:src (data "url")}]
+      [:div.hide.overflow
+       (data "title")
+       [:br]
+       (data "category")]]]))
+
 [:head
  [:meta {:charset (:charset site)}]
  [:title (:title site)]

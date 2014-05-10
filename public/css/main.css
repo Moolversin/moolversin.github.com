@@ -37,9 +37,14 @@ body {
 
 .overflow {
   background: #ffffff;
-  opacity:0.3;
-  filter:alpha(opacity=30);
+  opacity:0.8;
+  filter:alpha(opacity=80);
   color: #000000;
+  padding: 10px;
+}
+
+#container {
+  padding-left: 20px;
 }
 
 // vim: ts=2
