@@ -3,17 +3,16 @@
   position: relative;
 }
 
+@media only screen and (min-device-width: 320px) {
+  .w1 { width: 45%; }
+}
 
 @media only screen and (min-device-width: 768px) {
   .w1 { width: 30%; }
-  .w2 { width: 62.5%; }
-  .w3 { width: 90%; }
 }
 
 @media only screen and (min-device-width: 1025px) {
   .w1 { width: 31%; }
-  .w2 { width: 62.5%; }
-  .w3 { width: 90%; }
 }
 
 .item img {

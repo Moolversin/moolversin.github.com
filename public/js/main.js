@@ -1,7 +1,7 @@
 $(function() {
     $(window).load(function() {
         $('#container').masonry({
-            columnWidth: 200,
+            columnWidth: 150,
             itemSelector: '.item'
         })
     })
