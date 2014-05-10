@@ -76,17 +76,19 @@
 
 (def image-data-memoized (memoize image-data))
 
-(defn image [[url opts]]
-  (let [data (image-data-memoized url)
+(defn image [[main-url opts]]
+  (let [data (image-data-memoized main-url)
         url (data "url")
         title (data "title")
         category (data "category")]
     [:a.item-link {:href url
                    :data-lightbox "images"
                    :data-title (hiccup.core/html
+                                 [:a {:href main-url} "View on DeviantArt"]
+                                 [:br]
                                  title
                                  [:br]
-                                 [:a {:href url} "View on DeviantArt"])}
+                                 category)}
      [:div {:class (str "item "(:class opts))}
       [:img {:src url}]
       [:div.hide.overflow
@@ -95,4 +97,4 @@
        [:p.description category]]]]))
 
 [:div#container
- (map image (zipmap urls opts))]
+ (pmap image (zipmap urls opts))]
