@@ -69,4 +69,8 @@ body {
   display: block;
 }
 
+.header-links {
+  margin-bottom: 20px;
+}
+
 // vim: ts=2
