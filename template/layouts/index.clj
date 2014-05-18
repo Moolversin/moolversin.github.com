@@ -19,13 +19,14 @@
         url (data "url")
         title (data "title")]
     [:a.item-link {:href url
+                   :title title
                    :data-lightbox "images"
                    :data-title (hiccup.core/html
                                  title
                                  [:br]
                                  [:a {:href main-url} "View on DeviantArt"])}
      [:div.item.w1
-      [:img {:src url}]
+      [:img {:src url :alt title}]
       [:div.hide.overflow
        [:h2 title]]]]))
 
