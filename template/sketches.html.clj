@@ -20,4 +20,4 @@
  (galleries-nav "sketches")]
 
 [:div#container
- (pmap image (urls-for images))]
+ (to-images-html (urls-for images))]

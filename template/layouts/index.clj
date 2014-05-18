@@ -89,6 +89,9 @@
                :class (is-active? "sketches" current)}
            "Sketches"]]]]])
 
+(defn to-images-html [coll]
+  (map image coll))
+
 [:head
  [:meta {:name "description"
          :content (str "Lubov Soltan. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com. "

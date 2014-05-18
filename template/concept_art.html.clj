@@ -13,4 +13,4 @@
  (galleries-nav "concept_art")]
 
 [:div#container
- (pmap image (urls-for images))]
+ (to-images-html (urls-for images))]
