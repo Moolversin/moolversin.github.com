@@ -16,7 +16,7 @@
     [:li.fn "Lubov Soltan"]
     [:li.email [:a {:href "mailto:lubarazgildeeva@gmail.com"} "Mail me!"]]
     [:li [:a {:href "https://plus.google.com/116635824809317777470/posts" :target "_blank"} "Google+"]]
-    [:li [:a {:href "http://moolver-sin.deviantart.com/" :target "_blank"} "Devian Art"]]
+    [:li [:a {:href "http://moolver-sin.deviantart.com/" :target "_blank"} "Deviant Art"]]
     [:li [:a {:href "https://www.behance.net/liubousoltan" :target "_blank"} "Behance"]]]]]
  [:div.row
   [:div.small-6.columns.small-centered

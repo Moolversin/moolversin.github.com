@@ -28,7 +28,7 @@
 
 (defn copy-uri-to-file [uri]
   (let [file-name (file-name-from-url uri)
-        local-file-name (str (System/getProperty "user.dir") "/love-site/public/works/" file-name)]
+        local-file-name (str (System/getProperty "user.dir") "/moolversin.github.com/public/works/" file-name)]
     (when-not (file-exists? local-file-name)
       (with-open [in (clojure.java.io/input-stream uri)
                   out (clojure.java.io/output-stream local-file-name)]
