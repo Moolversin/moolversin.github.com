@@ -14,9 +14,28 @@
 
 (def image-data-memoized (memoize image-data))
 
+(defn file-exists? [file]
+  (.exists (clojure.java.io/as-file file)))
+
+(defn file-name-from-url [url]
+  (-> url
+      clojure.java.io/as-url
+      .getFile
+      (clojure.string/split #"/")
+      last))
+
+(defn copy-uri-to-file [uri]
+  (let [file-name (file-name-from-url uri)
+        local-file-name (str (System/getProperty "user.dir") "/love-site/public/works/" file-name)]
+    (when-not (file-exists? local-file-name)
+      (with-open [in (clojure.java.io/input-stream uri)
+                  out (clojure.java.io/output-stream local-file-name)]
+        (clojure.java.io/copy in out)))))
+
 (defn image [main-url]
   (let [data (image-data-memoized main-url)
-        url (data "url")
+        _ (copy-uri-to-file (data "url"))
+        url (str "/works/" (file-name-from-url (data "url")))
         title (data "title")]
     [:a.item-link {:href url
                    :title title
