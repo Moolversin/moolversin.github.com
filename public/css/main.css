@@ -111,8 +111,8 @@ body {
   padding: 5px;
 }
 
-.no-decoration {
-  list-style: none;
+.contacts {
+  margin-left: 4%;
 }
 
 //vim: ts=2:bs=2:sts=2:expandtab
