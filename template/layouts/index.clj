@@ -22,7 +22,8 @@
       clojure.java.io/as-url
       .getFile
       (clojure.string/split #"/")
-      last))
+      last
+      (clojure.string/replace #"_by_.*\." ".")))
 
 (defn copy-uri-to-file [uri]
   (let [file-name (file-name-from-url uri)
