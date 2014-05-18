@@ -23,7 +23,8 @@
       .getFile
       (clojure.string/split #"/")
       last
-      (clojure.string/replace #"_by_.*\." ".")))
+      (clojure.string/replace #"_by_.*\." ".")
+      (clojure.string/replace #"_" "-")))
 
 (defn copy-uri-to-file [uri]
   (let [file-name (file-name-from-url uri)
