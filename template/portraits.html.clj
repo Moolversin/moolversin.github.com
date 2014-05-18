@@ -1,5 +1,6 @@
 ; @layout  index
 ; @title   Lubov Soltan - Home
+; @description Portraits of Peter Steele, Jake Gyllenhaal, Khal Drogo, Peter tagtgren, Kerry King, Joey Jordisson, Christian Bale, Dez Fafara and many more.
 
 (def images
   "http://moolver-sin.deviantart.com/art/Olga-400134129

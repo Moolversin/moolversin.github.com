@@ -1,5 +1,6 @@
 ; @layout  index
 ; @title   Lubov Soltan - Home
+; @description My various sketches.
 
 (def images
   "http://moolver-sin.deviantart.com/art/Old-shed-196756573

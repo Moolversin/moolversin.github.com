@@ -1,5 +1,6 @@
 ; @layout  index
 ; @title   Lubov Soltan - Home
+; @description My variaous concepts.
 
 (def images
   "http://moolver-sin.deviantart.com/art/Girl-in-hat-286862494

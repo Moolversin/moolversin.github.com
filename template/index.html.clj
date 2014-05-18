@@ -1,5 +1,6 @@
 ; @layout  index
 ; @title   Lubov Soltan - Home
+; @description Portraits of Khal Drogo, Peter tagtgren, Kerry King, Joey Jordisson, Christian Bale, Dez Fafara.
 
 (def images
   "http://moolver-sin.deviantart.com/art/Dez-Fafara-204484050

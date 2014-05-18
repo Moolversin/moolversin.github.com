@@ -111,4 +111,8 @@ body {
   padding: 5px;
 }
 
-// vim: ts=2:bs=2:sts=2:expandtab
+.no-decoration {
+  list-style: none;
+}
+
+//vim: ts=2:bs=2:sts=2:expandtab

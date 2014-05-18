@@ -1,5 +1,6 @@
 ; @layout  index
 ; @title   Lubov Soltan - Home
+; @description Surrealism works.
 
 (def images
   "http://moolver-sin.deviantart.com/art/Glance-406528379
