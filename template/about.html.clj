@@ -1,5 +1,5 @@
 ; @layout  index
-; @title   Love Soltan - About, contacts.
+; @title   Lubov Soltan - About, contacts.
 ; @description About me. Contact me.
 
 [:div.header
@@ -20,4 +20,4 @@
     [:li [:a {:href "https://www.behance.net/liubousoltan" :target "_blank"} "Behance"]]]]]
  [:div.row
   [:div.small-6.columns.small-centered
-   [:img {:src "/img/me.jpg"}]]]]
+   [:img {:src "/img/me.jpg" :alt "Lubov Soltan"}]]]]
