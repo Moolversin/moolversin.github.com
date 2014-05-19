@@ -85,7 +85,6 @@ body {
 .galleries-links {
   left: 0.175rem;
   position: relative;
-  max-width: 900px;
 }
 
 .galleries-links li {
