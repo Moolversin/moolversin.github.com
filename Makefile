@@ -10,4 +10,4 @@ copy:
 commit:
 	cd deploy/ && git add . &&  git ci -am 'Update website'
 push:
-	cd deploy/ && git push origin gh-pages
+	cd deploy/ && git push origin master
