@@ -1,5 +1,5 @@
 ; @layout  index
-; @title   Lubov Soltan - Home
+; @title   Lubov Soltan - Artist living in Amsterdam, the Netherlands
 ; @description Portraits of Khal Drogo, Peter tagtgren, Kerry King, Joey Jordisson, Christian Bale, Dez Fafara.
 
 (def images
