@@ -105,7 +105,6 @@
          :content (str "Lubov Soltan. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com. "
                        (:description site))}]
  [:meta {:charset (:charset site)}]
- [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
  [:link {:href "/favicon.ico" :rel "shortcut icon"}]
  [:link {:href "/favicon.gif" :rel "icon" :type "image/gif"}]
  [:title (:title site)]
