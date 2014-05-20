@@ -113,11 +113,11 @@
  (css ["/css/normalize.css"
        "/css/foundation.min.css"
        "/css/main.css"
-       "/css/lightbox.css"])]
+       "/css/lightbox.css"])
+ [:script ga-script]]
 ; /head
 
 [:body
- [:script ga-script]
  [:div
   contents]
  (js ["/js/masonry.pkgd.min.js"
