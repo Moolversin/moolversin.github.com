@@ -102,7 +102,7 @@
 
 [:head
  [:meta {:name "description"
-         :content (str "Lubov Soltan. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com. "
+         :content (str "Lubov Soltan. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com. Love Soltan. "
                        (:description site))}]
  [:meta {:charset (:charset site)}]
  [:link {:href "/favicon.ico" :rel "shortcut icon"}]
