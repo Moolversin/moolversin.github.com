@@ -100,6 +100,8 @@
                  ga('create', 'UA-51145039-1', 'lovesoltan.com');
                  ga('send', 'pageview');")
 
+; @format html5
+
 [:head
  [:meta {:name "description"
          :content (str "Lubov Soltan. Artist living in Amsterdam, Netherlands. lubarazgildeeva@gmail.com. Love Soltan. "
