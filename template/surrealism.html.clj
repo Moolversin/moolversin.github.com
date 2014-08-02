@@ -17,7 +17,12 @@
    http://moolver-sin.deviantart.com/art/Windows-196669814
    http://moolver-sin.deviantart.com/art/Above-the-city-196668264
    http://moolver-sin.deviantart.com/art/Thought-generator-196667639
-   http://moolver-sin.deviantart.com/art/Cat-collector-196667024")
+   http://moolver-sin.deviantart.com/art/Cat-collector-196667024
+   http://moolver-sin.deviantart.com/art/Yin-and-Yin-472553359
+   http://moolver-sin.deviantart.com/art/The-crow-464877373
+   http://moolver-sin.deviantart.com/art/Wild-forest-464873650
+   http://moolver-sin.deviantart.com/art/Black-hair-464866595
+   http://moolver-sin.deviantart.com/art/Black-and-white-464868109")
 
 [:div.header
  (logo)

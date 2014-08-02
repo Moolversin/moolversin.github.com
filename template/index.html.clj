@@ -6,6 +6,7 @@
   "http://moolver-sin.deviantart.com/art/Dez-Fafara-204484050
    http://moolver-sin.deviantart.com/art/Christian-Bale-209830247
    http://moolver-sin.deviantart.com/art/Max-207549641
+   http://moolver-sin.deviantart.com/art/The-crow-464877373
    http://moolver-sin.deviantart.com/art/Small-400134129
    http://moolver-sin.deviantart.com/art/Kate-the-mysterious-367590887
    http://moolver-sin.deviantart.com/art/Girl-Is-Born-371835480
@@ -22,7 +23,8 @@
    http://moolver-sin.deviantart.com/art/Maxim-196557811
    http://moolver-sin.deviantart.com/art/Embryo-257361890
    http://moolver-sin.deviantart.com/art/Hunter-404507800
-   http://moolver-sin.deviantart.com/art/Glance-406528379")
+   http://moolver-sin.deviantart.com/art/Glance-406528379
+   http://moolver-sin.deviantart.com/art/Yin-and-Yin-472553359")
 
 [:div.header
  (logo)
