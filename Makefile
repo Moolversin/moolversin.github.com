@@ -6,6 +6,8 @@ default:
 	make push
 compile:
 	cd .. && lein run moolversin.github.com --compile
+run:
+	cd .. && lein run moolversin.github.com
 copy:
 	cp public/* deploy/ -rf
 commit:
