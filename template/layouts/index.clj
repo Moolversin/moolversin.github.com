@@ -62,7 +62,7 @@
     [:ul.inline-list
      [:li [:a {:href "/"} "Home"]]
      [:li [:a {:href "/portraits.html"} "Gallery"]]
-     [:li [:a {:href "http://moolver-sin.deviantart.com/prints/"
+     [:li [:a {:href "http://www.inprnt.com/gallery/moolversin/"
                :target "_blank"}
            "Buy prints"]]
      [:li [:a {:href "/about.html"} "About"]]]]])
