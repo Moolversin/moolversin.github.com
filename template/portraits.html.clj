@@ -18,7 +18,7 @@
    http://moolver-sin.deviantart.com/art/Max-207549641
    http://moolver-sin.deviantart.com/art/Kerry-King-205508133
    http://moolver-sin.deviantart.com/art/Dez-Fafara-204484050
-   http://moolver-sin.deviantart.com/art/Portrait-of-adorable-pet-for-one-of-my-clients-468699254
+   http://moolver-sin.deviantart.com/art/Portrait-of-adorable-pet-468699254
    http://moolver-sin.deviantart.com/art/Maxim-196557811")
 
 [:div.header
