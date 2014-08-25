@@ -58,13 +58,10 @@
 
 (defn main-nav []
   [:div.row.header-links
-   [:div.small-4.column.small-centered.text-center
+   [:div.small-3.column.small-centered.text-center
     [:ul.inline-list
      [:li [:a {:href "/"} "Home"]]
      [:li [:a {:href "/portraits.html"} "Gallery"]]
-     [:li [:a {:href "http://www.inprnt.com/gallery/moolversin/"
-               :target "_blank"}
-           "Buy prints"]]
      [:li [:a {:href "/about.html"} "About"]]]]])
 
 (defn is-active? [checking current]
